@@ -46,10 +46,10 @@ pip install -r requirements.txt
 
 - Else, manually install the necessary packages and generate the file:
 
-**Note**: Appropriate pip commands for pytorch packages for CUDA can be found [here](https://pytorch.org/get-started/locally/).
-**Note**: If any errors are thrown during installation, try pip installing each package seperately.
+- **Note**: Appropriate pip commands for pytorch packages for CUDA can be found [here](https://pytorch.org/get-started/locally/).
+- **Note**: If any Errors are thrown during installation (usually happens), try pip installing each package seperately.
 
-With CUDA cores (for systems with Nvidia cards):
+With CUDA cores (for systems with Nvidia GPU):
 
 ```bash
 pip install torch --index-url https://download.pytorch.org/whl/cu124
@@ -57,7 +57,7 @@ pip install transformers[torch] datasets accelerate scipy scikit-learn pandas nu
 pip freeze > requirements.txt
 ```
 
-Without CUDA cores (for systems without Nvidia)
+Without CUDA cores (for systems without Nvidia GPU)
 
 ```bash
 pip install torch transformers[torch] datasets accelerate scipy scikit-learn pandas numpy matplotlib seaborn flask ipykernel jupyter
